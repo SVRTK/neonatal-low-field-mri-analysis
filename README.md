@@ -100,7 +100,7 @@ In case you found this repository useful please give appropriate credit to the s
 
 
 **64mT contrast enhancement (will be updated soon):**
-> Cawley, P., Uus, A., Colford, K., Padormo, F., Teixeira, R., Tomazinho, I., David Edwards, A., Arichi, T., Hajnal, J. v, & Rutherford, M. A. (2026). Anatomy-aware enhancement of 64 mT T2-weighted neonatal brain MRI for structural analysis Neonatal MRI, ultra low field MRI, contrast transfer. medRxiv, 2026.0*****. https://doi.org/*****
+> Cawley, P., Uus, A., Colford, K., Padormo, F., Teixeira, R., Tomazinho, I., David Edwards, A., Arichi, T., Hajnal, J. v, & Rutherford, M. A. (2026). Anatomy-aware enhancement of 64 mT T2-weighted neonatal brain MRI for structural analysis. medRxiv, 2026.0*****. https://doi.org/*****
 
 **64mT acquisition protocol:**
 > Cawley, P., Padormo, F., Cromb, D., Almalbis, J., Marenzana, M., Teixeira, R., Deoni, S. C., Ljungberg, E., Bennallick, C., Kolind, S., Dean, D., Pepper, M. S., Sekoli, L., de Canha, A., van Rensburg, J., Jones, D. K., Bourke, N., Sabir, H., Lecurieux Lafayette, S., … Edwards, A. D. (2023). Development of neonatal-specific sequences for portable ultralow field magnetic resonance brain imaging: a prospective, single-centre, cohort study. eClinicalMedicine, 65. https://doi.org/10.1016/j.eclinm.2023.102253

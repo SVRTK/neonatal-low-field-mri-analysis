@@ -62,14 +62,11 @@ _Note: for MAC - please use docker pull fetalsvrtk/svrtk:perinatal_brain_mri_ana
 
 docker pull fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd
 
+# contrast enhancement + segmentation / surface extraction: CPU version 
+docker run --rm --gpus all --mount type=bind,source=LOCATION_ON_YOUR_MACHINE,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/neonatal-low-field-mri-analysis/scripts/run-64mt-enhancement-t2w-neo-brain-cpu.sh [/home/data/path_to_input_t2w_64mt_image.nii.gz] [/home/data/path_to_output_processing_folder] [/home/data/path_to_output_reo_enhanced_image.nii.gz] [/home/data/path_to_output_reo_original_image.nii.gz]  [/home/data/path_to_output_reo_tissue_label.nii.gz]  ; '
 
-
-# auto Multi-BOUNTI brain tissue segmentation: fetal dHCP acquisition
-docker run --rm --gpus all --mount type=bind,source=LOCATION_ON_YOUR_MACHINE,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/perinatal-brain-mri-analysis/scripts/run-multi-bounti-fetal-brain-segmentation-2026-dhcp.sh [N4 correction: 1 - yes; 0 - no] [/home/data/path_to_t2w_recon.nii.gz] [/home/data/path_to_tmp_processing_folder] [/home/data/path_to_output_multi_tissue_bounti_label.nii.gz]  ; '
-
-# auto Multi-BOUNTI brain tissue segmentation: fetal general acquisition
-docker run --rm --gpus all --mount type=bind,source=LOCATION_ON_YOUR_MACHINE,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/perinatal-brain-mri-analysis/scripts/run-multi-bounti-fetal-brain-segmentation-2026-general.sh [N4 correction: 1 - yes; 0 - no] [/home/data/path_to_t2w_recon.nii.gz] [/home/data/path_to_tmp_processing_folder] [/home/data/path_to_output_multi_tissue_bounti_label.nii.gz]  ; '
-
+# contrast enhancement + segmentation / surface extraction: GPU version 
+docker run --rm --gpus all --mount type=bind,source=LOCATION_ON_YOUR_MACHINE,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/neonatal-low-field-mri-analysis/scripts/run-64mt-enhancement-t2w-neo-brain-gpu.sh [/home/data/path_to_input_t2w_64mt_image.nii.gz] [/home/data/path_to_output_processing_folder] [/home/data/path_to_output_reo_enhanced_image.nii.gz] [/home/data/path_to_output_reo_original_image.nii.gz]  [/home/data/path_to_output_reo_tissue_label.nii.gz]  ; '
 
 
 ```
@@ -79,7 +76,7 @@ docker run --rm --gpus all --mount type=bind,source=LOCATION_ON_YOUR_MACHINE,tar
 
 ```bash
 
-docker run --rm --gpus all --mount type=bind,source=/home/au18/folder_with_datasets,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/perinatal-brain-mri-analysis/scripts/run-multi-bounti-neo-brain-segmentation-2026-dhcp.sh /home/data/neo_svr_recon.nii.gz /home/data/tmp /home/data/multi_tissue_bounti_label.nii.gz  ; '
+docker run --rm --gpus all --mount type=bind,source=/home/au18/folder_with_datasets,target=/home/data  fetalsvrtk/svrtk:perinatal_brain_mri_analysis_amd sh -c ' bash /home/neonatal-low-field-mri-analysis/scripts/run-64mt-enhancement-t2w-neo-brain-cpu.sh /home/data/input-t2w-64mt.nii.gz  /home/data/proc-outputs /home/data/output-reo-enhanced.nii.gz  /home/data/output-reo-orignal.nii.gz  /home/data/output-reo-lab.nii.gz   ; '
 
 ```
 

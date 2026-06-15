@@ -1,7 +1,7 @@
 Automated analysis tools for neonatal MRI at 64mT
 ====================
 
-This repository contains DL pipelines for [MONAI](https://github.com/Project-MONAI/MONAI)-based automated analysis neonatal brain MRI.
+This repository contains DL pipelines for [MONAI](https://github.com/Project-MONAI/MONAI)-based automated analysis of neonatal brain MRI at 64mT.
 
 
 - The repository, scripts and models were designed and created at the Department of Early Life Imaging, King's College London.

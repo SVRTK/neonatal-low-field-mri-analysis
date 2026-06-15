@@ -91,16 +91,8 @@ def write_gii_mesh(mesh, gifti_file, structure=None):
             "CORTEX_RIGHT": "CortexRight",
         }.get(structure, structure)
 
-        img.meta = nib.gifti.GiftiMetaData.from_dict({
-            "AnatomicalStructurePrimary": meta_value
-        })
-
-        carray.meta = nib.gifti.GiftiMetaData.from_dict({
-            "AnatomicalStructurePrimary": meta_value
-        })
-        farray.meta = nib.gifti.GiftiMetaData.from_dict({
-            "AnatomicalStructurePrimary": meta_value
-        })
+        img.meta = nib.gifti.GiftiMetaData()
+        img.meta["AnatomicalStructurePrimary"] = meta_value
 
     nib.save(img, gifti_file)
 

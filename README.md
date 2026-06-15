@@ -23,7 +23,7 @@ Jonathan O'Muircheartaigh, Prof David Edwards and Prof Jo Hajnal.
 
 
 
-<img src="info/multi-bounti-3t-full.jpg" alt="AUTOSVRTKEXAMPLE" height="400" align ="center" />
+<img src="info/hilo-pipeline.jpg" alt="AUTOSVRTKEXAMPLE" height="700" align ="center" />
 
 
 
@@ -38,17 +38,20 @@ Auto processing scripts
 **ANATOMY-AWARE T2w CONTRAST ENHANCEMENT FOR 64mT NEONATAL BRAIN MRI:**
 
 *Input data requirements:*
-- sufficient image quality, no extreme artifacts
-- good quality 3D SVR
-- fetal TE=250ms - dHCP protocol 
+- sufficient image quality, no extreme artifacts / signal loss
+- T2w 64mT acquisition protocol (Cawley, 2023)
 - full ROI coverage
 - standard radiological space
 - 25-50 weeks scan PMA
 - no extreme structural anomalies (the network was not trained on too many abnormal cases)
 
 *Outputs:*
+- enhanced 64mT image reoriented to standard space
+- original 64mT image reoriented to standard space
+- tissue parcellation label reoriented to standard space
+- folder with generated surfaces, measurements and QC metrics
 
-- **!!! the output resolution will be 1.0mm**
+- **!!! the output resolution 1.0mm**
   
 Note: you will need >16GB GPU for -gpu option
 
@@ -81,8 +84,6 @@ docker run --rm --gpus all --mount type=bind,source=/home/au18/folder_with_datas
 ```
 
 
-
-
 License
 -------
 
@@ -98,12 +99,11 @@ Citation and acknowledgements
 In case you found this repository useful please give appropriate credit to the software.
 
 
-**64mT contrast enhancement:**
-> Uus, A., Fukami-Gartner, A., Kyriakopoulou, V., Cromb, D., Morgan, T., Arulkumaran, S., Egloff Collado, A., Luis, A., Bos, R., Makropoulos, A., Schuh, A., Robinson, E., Sousa, H., Deprez, M., Cordero-Grande, L., Bradshaw, C., Colford, K., Hutter, J., Price, A., O’Muircheartaigh, J., Hammers, A., Rueckert, D., Counsell, S., McAlonan, G., Arichi, T., Edwards, A. D., Hajnal, J. V., Rutherford, M. A., Story, L. (2026). Multi-BOUNTI: Multi-lobe Brain vOlUmetry and segmeNtation for feTal and neonatal MRI. medRxiv, 2026.04.21.26351376. https://doi.org/10.64898/2026.04.21.26351376
+**64mT contrast enhancement (will be updated soon):**
+> Cawley, P., Uus, A., Colford, K., Padormo, F., Teixeira, R., Tomazinho, I., David Edwards, A., Arichi, T., Hajnal, J. v, & Rutherford, M. A. (2026). Anatomy-aware enhancement of 64 mT T2-weighted neonatal brain MRI for structural analysis Neonatal MRI, ultra low field MRI, contrast transfer. medRxiv, 2026.0*****. https://doi.org/*****
 
-
-
-
+**64mT acquisition protocol:**
+> Cawley, P., Padormo, F., Cromb, D., Almalbis, J., Marenzana, M., Teixeira, R., Deoni, S. C., Ljungberg, E., Bennallick, C., Kolind, S., Dean, D., Pepper, M. S., Sekoli, L., de Canha, A., van Rensburg, J., Jones, D. K., Bourke, N., Sabir, H., Lecurieux Lafayette, S., … Edwards, A. D. (2023). Development of neonatal-specific sequences for portable ultralow field magnetic resonance brain imaging: a prospective, single-centre, cohort study. eClinicalMedicine, 65. https://doi.org/10.1016/j.eclinm.2023.102253
 
 
 Disclaimer

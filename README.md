@@ -28,11 +28,11 @@ Jonathan O'Muircheartaigh, Prof David Edwards and Prof Jo Hajnal.
 
 
 
-Auto processing scripts 
+Automated processing scripts 
 ------------------------
 
 
-**The automated docker tags are _fetalsvrtk/svrtk:neonatal_low_field_mri_analysis_amd_ (AMD system) _fetalsvrtk/svrtk:neonatal_low_field_mri_analysis_amd_ (ARM system)**
+**The automated docker tags are _fetalsvrtk/svrtk:neonatal_low_field_mri_analysis_amd_ (AMD system) _fetalsvrtk/svrtk:neonatal_low_field_mri_analysis_arm_ (ARM system)**
 
 
 **ANATOMY-AWARE T2w CONTRAST ENHANCEMENT FOR 64mT NEONATAL BRAIN MRI:**

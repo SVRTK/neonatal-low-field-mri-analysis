@@ -38,7 +38,7 @@ Automated processing scripts
 **ANATOMY-AWARE T2w CONTRAST ENHANCEMENT FOR 64mT NEONATAL BRAIN MRI:**
 
 *Input data requirements:*
-- sufficient image quality, no extreme artifacts / signal loss
+- sufficient image quality, no motion artifacts / extreme signal loss
 - T2w 64mT acquisition protocol (Cawley, 2023)
 - full ROI coverage
 - standard radiological space

@@ -58,7 +58,7 @@ Note: you will need >16GB GPU for -gpu option
 
 **PLEASE RUN IT DIRECTLY VIA OUR DOCKER:**
 
-_Note: for MAC - please use docker pull fetalsvrtk/svrtk:perinatal_brain_mri_analysis_arm and CPU version _
+_Note: for MAC M1 - please use docker pull fetalsvrtk/svrtk:perinatal_brain_mri_analysis_arm and CPU version_
 
 
 ```bash

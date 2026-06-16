@@ -304,5 +304,5 @@ else
 fi
 
 
-chmod 777 -R ${out_img} ${out_lab} ${out_folder}
+chmod 777 -R ${out_img} ${out_lab} ${out_folder} ${out_org}
 

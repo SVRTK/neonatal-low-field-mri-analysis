@@ -99,8 +99,8 @@ Citation and acknowledgements
 In case you found this repository useful please give appropriate credit to the software.
 
 
-**64mT contrast enhancement (will be updated soon):**
-> Cawley, P., Uus, A., Colford, K., Padormo, F., Teixeira, R., Tomazinho, I., UNITY Consortium, Steven C.R. Williams, A. David Edwards, Jonathan O’Muircheartaigh, A., Arichi, T., Hajnal, J. v, & Rutherford, M. A. (2026). ALFIE: Anatomy-aware enhancement of Low FIEld 64mT T2-weighted neonatal brain MRI for structural analysis. medRxiv, 2026.0*****. https://doi.org/*****
+**64mT contrast enhancement:**
+> Cawley, P., Uus, A., Colford, K., Padormo, F., Teixeira, R., Tomazinho, I., UNITY Consortium, Steven C.R. Williams, A. David Edwards, Jonathan O’Muircheartaigh, A., Arichi, T., Hajnal, J. v, & Rutherford, M. A. (2026). ALFIE: Anatomy-aware enhancement of Low FIEld 64mT T2-weighted neonatal brain MRI for structural analysis. medRxiv, 2026.08.25.26361317. [https://doi.org/10.64898/2026.08.25.26361317](https://doi.org/10.64898/2026.08.25.26361317)
 
 **64mT acquisition protocol:**
 > Cawley, P., Padormo, F., Cromb, D., Almalbis, J., Marenzana, M., Teixeira, R., Deoni, S. C., Ljungberg, E., Bennallick, C., Kolind, S., Dean, D., Pepper, M. S., Sekoli, L., de Canha, A., van Rensburg, J., Jones, D. K., Bourke, N., Sabir, H., Lecurieux Lafayette, S., … Edwards, A. D. (2023). Development of neonatal-specific sequences for portable ultralow field magnetic resonance brain imaging: a prospective, single-centre, cohort study. eClinicalMedicine, 65. https://doi.org/10.1016/j.eclinm.2023.102253

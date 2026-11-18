@@ -304,10 +304,7 @@ body {{ font-family: Arial, sans-serif; margin: 20px; }}
 <tr><td>Scan PMA</td><td>{ga:.2f} weeks</td></tr>
 <tr><td>Scan date</td><td>{escape(scan_date)}</td></tr>
 </table>
-<p style='font-size:13px'>Reference curves cover scan PMA 38–47 weeks.
-Total brain volume includes CSF, ventricles and cavum, following the example's total-volume definition.
-Label 8 is {'included in WM and total brain volume' if INCLUDE_LABEL_8_IN_WM else 'excluded from WM and total brain volume (provisional mapping)'}.
-Segmentation and reference definitions require review before interpretation.</p>
+
 <br>
 <img src='data:image/png;base64,{brain_image_b64}' alt='Segmentation overlay' class='brain-image'>
 <br><br>
@@ -317,6 +314,7 @@ Segmentation and reference definitions require review before interpretation.</p>
 </table>
 <br><br>
 <div class='graph-container'>{graphs_html}</div>
+<p style='font-size:12px; margin-top:30px'>This software has been developed for research purposes only, and hence should not be used as a diagnostic tool. In no event shall the authors or distributors be liable to any direct, indirect, special, incidental, or consequential damages arising of the use of this software, its documentation, or any derivatives thereof, even if the authors have been advised of the possibility of such damage.</p>
 </body></html>"""
 
 def main():
